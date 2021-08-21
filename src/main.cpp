@@ -1,5 +1,6 @@
 #include<iostream>
-#include"heap.h"
+#include"../include/heap.h"
+#include"../include/priorityqueue.h"
 
 int main() {
     std::cout<<"*****MIN HEAP IMPLEMENTATION*****"<<std::endl;
@@ -42,7 +43,7 @@ int main() {
     PriorityQueue queue(10);
     for (int i = 0; i < 10; i++) {
         std::cout << "Inserting element " << i + 1 << std::endl;
-        queue.enqueue(5 + rand() % 100);
+        queue.enqueue(rand() % 100);
         queue.Print();
         std::cout << std::endl;
     }

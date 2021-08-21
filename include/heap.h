@@ -9,7 +9,10 @@ private:
     //maximum size of the heap
     int max_capacity;
     //store elements as a aaray
-    int* heap = new int[max_capacity];
+
+    // int* heap = new int[max_capacity];
+
+    int *heap;
     //return parent index
     int parent(int i) {
         return (i - 1) / 2;
@@ -30,7 +33,8 @@ public:
     MinHeap(int capacity) {
          size = 0;
         this->max_capacity = capacity;
-       // heap.resize(max_capacity);
+        heap = new int[max_capacity];
+        // heap.resize(max_capacity);
     }
     int getmin();
     void Insert_key(int key);
@@ -52,26 +56,3 @@ public:
     }
 
 };
-
-class PriorityQueue {
-    //object of another class
-    MinHeap obj;
-
-public:
-    PriorityQueue(int max_size=0 ) { MinHeap obj(max_size); }
-    int front();
-    // Function to insert a new element
-    // in the Binary Heap
-    void enqueue(int key);
-
-    //Function to delete a element
-     // in the Binary Heap
-    void dequeue();
-
-
-    void Print();
-};
-
-
-
-
