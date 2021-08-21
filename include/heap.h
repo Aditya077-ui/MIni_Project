@@ -10,8 +10,6 @@ private:
     int max_capacity;
     //store elements as a aaray
 
-    // int* heap = new int[max_capacity];
-
     int *heap;
     //return parent index
     int parent(int i) {

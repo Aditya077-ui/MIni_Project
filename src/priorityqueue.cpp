@@ -17,15 +17,15 @@ int PriorityQueue::front() {
 }
 
 
-// void PriorityQueue::change_priority(int i, int p) {
+// void PriorityQueue::change_priority(int i, int val) {
 //     int oldp = priority[i];
-//     priority[i] = p;
+//     priority[i] = val;
 
-//     if (p > oldp) {
-//         obj.shiftup(i);
+//     if (val > oldp) {
+//         obj->shiftup(i);
 //     }
 //     else {
-//         obj.shiftdown(i);
+//         obj->shiftdown(i);
 //     }
 // }
 

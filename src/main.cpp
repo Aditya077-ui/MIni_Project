@@ -3,6 +3,7 @@
 #include"../include/priorityqueue.h"
 
 int main() {
+    std::cout<<std::endl;
     std::cout<<"*****MIN HEAP IMPLEMENTATION*****"<<std::endl;
     //Number of elements for our minHeap
     std::cout<<std::endl;
@@ -28,6 +29,7 @@ int main() {
     object.delete_key(5 + rand() % 100);
     std::cout << "Min heap structure after deleting any random numbers" << std::endl;
     object.printheap();
+    std::cout<<std::endl;
     std::cout<<"Min heap after decreasing  certain key"<<std::endl;
     object.decrease_key(1,6);
     object.printheap();
@@ -54,7 +56,7 @@ int main() {
     std::cout<<std::endl;
     std::cout << "After Dequeue in Priority Queue\n\n";
     queue.dequeue();
-
+    
 
 
 
