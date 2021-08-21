@@ -5,7 +5,7 @@
 class MinHeap {
 private:
     //current size of the heap
-    int size=0;
+    int size;
     //maximum size of the heap
     int max_capacity;
     //store elements as a aaray
@@ -28,7 +28,7 @@ public:
     }
     MinHeap() {}
     MinHeap(int capacity) {
-        int size = 0;
+         size = 0;
         this->max_capacity = capacity;
        // heap.resize(max_capacity);
     }
@@ -55,12 +55,10 @@ public:
 
 class PriorityQueue {
     //object of another class
-
-    int max_size=0;
     MinHeap obj;
 
 public:
-    PriorityQueue(int max_size ) { MinHeap obj(max_size); }
+    PriorityQueue(int max_size=0 ) { MinHeap obj(max_size); }
     int front();
     // Function to insert a new element
     // in the Binary Heap

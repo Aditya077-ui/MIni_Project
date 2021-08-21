@@ -27,6 +27,9 @@ int main() {
     object.delete_key(5 + rand() % 100);
     std::cout << "Min heap structure after deleting any random numbers" << std::endl;
     object.printheap();
+    std::cout<<"Min heap after decreasing  certain key"<<std::endl;
+    object.decrease_key(1,6);
+    object.printheap();
     std::cout << std::endl;
     std::cout << std::endl;
 
